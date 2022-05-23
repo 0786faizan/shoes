@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        #show_prodcuts{
+          margin-left: 45%;
+          margin-top: 50px;   
+          border: none;       
+        }
+        a{
+          text-decoration: none;
+          background: black;
+          color: white;
+          padding: 20px;
+          font-size: 20px; 
+                  
+        }
+        h2{
+         margin-left: 45%;
+          font-size: 40px;
+          
+        }
+      
+           #type{
+             margin-left: 45%;
+             width: 20%;
+             padding: 6px;
+             margin-top: 20px;
+             color: green;
+             font-size: 20px;
+             border-radius: 5px;
+           }
+           
+           #desc{
+             margin-left: 45%;
+             width: 20%;
+             padding: 6px;
+             color: green;
+             font-size: 20px;
+             border-radius: 5px;
+           }
+
+           #price{
+             margin-left: 45%;
+             width: 20%;
+             padding: 6px;
+             color: green;
+             font-size: 20px;
+             border-radius: 5px;
+           }
+
+           #image{
+             margin-left: 45%;
+             width: 20%;
+             padding: 6px;
+             border-radius: 5px;
+             color: green;
+             font-size: 20px;
+           }
+           #add_product{
+             margin-left: 45%;
+             width: 20%;
+             padding: 6px;
+             border: none;
+             background: green;
+             color: white;
+             font-size: 20px;
+             cursor: pointer;
+             
+           }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+        <button id="show_prodcuts"> <a href="inventory.html"> Show Products</a></button>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+      <form id = "products" onsubmit = "addData(event)">
+      
+          <input type="text" name="" id="type" placeholder="Type"><br><br>
+          <input type="text" id="desc" placeholder="Description"><br><br>
+          <input type="text" id="price" placeholder="Price"><br><br>
+          <input type="text" id="image" placeholder="Image"><br><br>
+            <button id="add_product">Add Product</button>
+      
+      </form>
+
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
